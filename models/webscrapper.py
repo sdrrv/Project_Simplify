@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.options import Options as chr_opts
 
 class scrapper:
     def __init__(self):
-        self.driver= webdriver.chrome
+        self.driver= webdriver.Chrome()
         self.opts = chr_opts
     
     def close(self):
@@ -14,3 +14,6 @@ class scrapper:
     
     def set_opts_headless(self,Boolean):
         self.opts.headless = Boolean
+    
+    def get_opts(self):
+        return self.opts
