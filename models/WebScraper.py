@@ -6,7 +6,7 @@ class scrapper:
         self.driver= webdriver.chrome
         self.opts = chr_opts
     
-    def quit(self):
+    def close(self):
         self.driver.quit()
     
     def get_driver(self):
