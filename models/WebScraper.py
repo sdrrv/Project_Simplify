@@ -7,4 +7,10 @@ class scrapper:
         self.opts = chr_opts
     
     def quit(self):
-        self.driver.quit() 
+        self.driver.quit()
+    
+    def get_driver(self):
+        return self.driver
+    
+    def set_opts_headless(self,Boolean):
+        self.opts.headless = Boolean
